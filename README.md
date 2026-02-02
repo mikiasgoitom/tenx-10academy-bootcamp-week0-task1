@@ -1,25 +1,53 @@
-# Agentic Dev - Task 1 & 2
+# TenX Agentic Dev Challenge: AI Workflow Optimization
 
-This repository contains the configuration for a high-performance AI Coding Agent using the Model Context Protocol (MCP).
+Welcome to the **TenX Agentic Development** submission repository. This project demonstrates the configuration of a high-performance **Autonomous Coding Agent** using the Model Context Protocol (MCP) and advanced system prompt engineering.
 
-## 📂 Project Structure
+This environment is configured to transform a standard AI assistant into a proactive **"10x Engineer"** that follows strict operational security (OpSec) and cognitive workflows (OODA Loop).
 
-- `[.github/copilot-instructions.md](.github/copilot-instructions.md)`: **Active Rules File**. The operational system prompt used by the agent.
-- `[.github/copilot-instructions_proposed.md](.github/copilot-instructions_proposed.md)`: **Proposed Rules File**. A "10x Engineer" variant based on industry best practices (Boris Cherny, Claude Code).
-- `[.vscode/mcp.json](.vscode/mcp.json)`: **MCP Configuration**. Defines the connection to the `tenxfeedbackanalytics` server.
-- `[docs/](docs/)`: Documentation for understanding the setup.
+## 📂 Repository Structure
 
-## 🚀 Quick Start
+| File/Directory | Description |
+| :--- | :--- |
+| `[.github/copilot-instructions.md](.github/copilot-instructions.md)` | **Active Agent Rules**. The "System Prompt" that governs the AI's behavior, workflow, and tool usage. |
+| `[.vscode/mcp.json](.vscode/mcp.json)` | **MCP Configuration**. Defines the connection to the `tenxfeedbackanalytics` server for telemetry. |
+| `[docs/implementation-report.md](docs/implementation-report.md)` | **Task Report**. Detailed breakdown of the changes made, challenges faced, and insights gained (Task 3). |
+| `[docs/architecture-mcp.md](docs/architecture-mcp.md)` | **Technical Guide**. Explains how the Model Context Protocol integrates with the agent. |
 
-1.  **Understand the Setup**: Read `[docs/mcp-explanation.md](docs/mcp-explanation.md)` to learn how the AI interacts with the rules.
-2.  **Compare Rules**: Review the differences between the strict telemetry approach and the proposed engineering workflow.
-3.  **Active Agent**: The agent is currently governed by the strict trigger protocols defined in `copilot-instructions.md`.
+## 🚀 Setup & Configuration
 
-## 🤖 Task Overview
+### Prerequisites
+*   **VS Code** or **Cursor** IDE.
+*   **GitHub Copilot** or compatible AI Assistant.
+*   **Node.js** (for MCP server operations, if running locally).
 
-- **Task 1**: Configure MCP Trigger Tools (Completed).
+### 1. Environment Configuration
+The project relies on the **Model Context Protocol (MCP)** to track "AI Fluency".
+*   Ensure the `.vscode/mcp.json` file is present in your root directory.
+*   This file connects the agent to the remote proxy: `https://mcppulse.10academy.org/proxy`.
 
-* **Task 2**: Research & Improve Agent Rules (Completed).
-  - The active rules are now in `[.github/copilot-instructions.md](.github/copilot-instructions.md)`.
-* **Task 3**: Documentation (Completed).
-  - See the full report in `[docs/report-task-3.md](docs/report-task-3.md)`.
+### 2. Agent Rules (The "10x Engineer" Profile)
+The core logic resides in `[.github/copilot-instructions.md](.github/copilot-instructions.md)`. This file enforces:
+1.  **Mandatory Telemetry**: Calling `log_passage_time_trigger` before any analysis.
+2.  **Epistemic Humility**: "Verify before you act" (prevents file hallucinations).
+3.  **The OODA Loop**: A strict cognitive cycle:
+    *   **Observe**: List directories/files.
+    *   **Orient**: Read context.
+    *   **Decide**: Plan the change.
+    *   **Act**: Execute code edits.
+
+## 🛠️ Usage
+
+When interacting with the AI in this workspace, the agent will automatically:
+1.  **Acknowledge Constraints**: It will likely start responses by confirming trigger logs.
+2.  **Plan First**: It will provide a "Plan" or "Strategy" section before writing code.
+3.  **Use Links**: All file references will be clickable Markdown links.
+
+## 📄 Documentation
+
+For a deeper understanding of the work performed during this challenge:
+*   **[Implementation Report](docs/implementation-report.md)**: Configuring the "10x Engineer" workflow.
+*   **[MCP Architecture](docs/architecture-mcp.md)**: How the telemetry pipeline works.
+
+## 🤝 Context
+**Program**: Agentic Development Bootcamp (Week 0)
+**Collaboration**: 10 Academy & Tenacious Intelligence (TenX)
