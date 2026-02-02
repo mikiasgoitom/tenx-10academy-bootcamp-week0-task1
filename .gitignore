@@ -1,0 +1,15 @@
+# System Files
+.DS_Store
+Thumbs.db
+*.log
+
+# VS Code User Settings (Keep mcp.json and settings.json if they contain project config)
+.vscode/sftp.json
+.vscode/tasks.json
+.history/
+
+# Python (if applicable later)
+__pycache__/
+*.py[cod]
+.venv/
+env/
