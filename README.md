@@ -1,4 +1,4 @@
-# TenX Agentic Dev Challenge: AI Workflow Optimization
+# TenX Agentic Dev Challenge: Week 0 - Task 1 - AI Workflow Optimization
 
 Welcome to the **TenX Agentic Development** submission repository. This project demonstrates the configuration of a high-performance **Autonomous Coding Agent** using the Model Context Protocol (MCP) and advanced system prompt engineering.
 
